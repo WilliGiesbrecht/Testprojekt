@@ -1,0 +1,503 @@
+body {
+    margin: 0;
+    cursor: context-menu;
+    background-color: rgba(235, 235, 235, 0.527);
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background: white;
+    border: rgba(179, 177, 177, 0.644) solid 1px;
+}
+
+.headerMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    font-size: 146px;
+    position: relative;
+    width: 100%;
+    max-width: 975px;
+}
+
+.headerTitel {
+    display: flex;
+    min-width: 135px;
+}
+
+.headerTitel img {
+    cursor: pointer;
+    display: flex;
+    width: 103px;
+    position: relative;
+}
+
+.headerSearch {
+    position: relative;
+    display: flex;
+}
+
+.headerSearch input {
+    border: rgba(173, 173, 173, 0.856) 1px solid;
+    border-radius: 3px;
+    padding: 6px 8px;
+    width: 200px;
+    background-color: rgba(235, 235, 235, 0.527);
+    font-weight: 100;
+}
+
+.headerNavigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerIcons {
+    position: relative;
+    display: flex;
+    flex-direction: center;
+    white-space: nowrap;
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img {
+    cursor: pointer;
+    width: 24px;
+    margin-left: 24px;
+}
+
+.main {
+    top: 88px;
+    left: 0;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    border: black;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.sideDiv {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 88px;
+    right: 420px;
+    height: 100vh;
+    padding: 0;
+    max-width: 357px;
+    width: 100%;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    margin-right: 28px;
+    padding: 0;
+    max-width: 588px;
+    max-height: inherit;
+    width: 100%;
+    left: 180px;
+}
+
+.story {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+}
+
+.storyImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    overflow: hidden;
+    height: 63px;
+    width: 63px;
+    border: solid 2px red;
+    border-radius: 100%;
+}
+
+.storyImg img {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+.storyAuthor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    height: 10px;
+}
+
+.storyAuthor p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.storyContainer {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    height: 100px;
+    border: rgba(179, 177, 177, 0.644) solid 1px;
+    border-radius: 3px;
+    min-width: 588px;
+    overflow: hidden;
+    background: white;
+    margin-bottom: 24px;
+}
+
+.rightProfileDiv {
+    display: flex;
+    position: relative;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.rightProfileContainer {
+    width: 100%;
+    margin-right: 4px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightProfileImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(201, 200, 200);
+    border-radius: 100%;
+    height: 58px;
+    width: 58px;
+    margin-right: -100px;
+    margin-left: 16px;
+}
+
+.rightProfileImg img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 56px;
+    border-radius: 100%;
+}
+
+.rightProfileName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.emailName {
+    font-size: small;
+    font-weight: 600;
+}
+
+.rightProfileChange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightProfileChange a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+    color: #0095f6;
+}
+
+.profileName {
+    color: gray;
+    font-size: small;
+    font-weight: 430;
+}
+
+.rightProposalsContainer {
+    width: 100%;
+}
+
+.proposalsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 450;
+    color: #8e8e8e;
+}
+
+.proposalsDiv a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+    color:#262626;
+}
+
+.rightSubContainer {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.rightSubContainer img {
+    width: 36px;
+    height: 36px;
+    margin-left: 17px;
+}
+
+.subDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+
+}
+
+.subDiv a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+    color: #0095f6;
+}
+
+.subNames {
+    margin-left: -100px;
+}
+
+.ooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -22px;
+}
+
+.footerLinks {
+    display: inline-block;
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: none;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+.footerEnd {
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-left: 18px;
+}
+
+.postContainer {
+    width: 598px;
+}
+
+.post {
+    background: white;
+    height: 980px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: rgba(179, 177, 177, 0.644) solid 1px;
+    border-radius: 3px;
+    margin-bottom: 24px;
+}
+
+.postTitelDiv {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.postTitelDiv img {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+}
+
+.titelImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    border: red solid 2px;
+    border-radius: 100%;
+    height: 36px;
+    width: 36px;
+}
+
+.postImgDiv {
+    height: 612px;
+    width: 100%;
+}
+
+.picDiv {
+    height: 100%;
+    width: 100%;
+}
+
+.postImgDiv img {
+    object-fit: cover;
+    position: absolute;
+    height: 612px;
+    width: 100%;
+}
+
+.titelAuthor {
+    min-width: 500px;
+    padding-left: 12px;
+}
+
+.titelAuthor p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.postCommentDiv {
+    width: 100%;
+}
+
+.commentIconBar {
+    display: flex;
+    align-items: center;
+    max-width: 596px;
+    width: 100%;
+    height: 50px;
+}
+.commentIconBar img {
+    padding-right: 12px;
+    height: 24px;
+    width: 24px;
+}
+
+.iconBar1 {
+    padding-left: 12px;
+    min-width: 545px;
+}
+
+.commentDiv {
+    width: 100%;
+    height: 200px;
+    padding-left: 12px;
+}
+
+.descriptionPart {
+    display: flex;
+    font-size: 14px;
+}
+
+.descriptionAuthor {
+    font-weight: 500;
+    padding-right: 8px;
+}
+
+.commentheadline {
+    color: gray;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.comment {
+    display: flex;
+    font-size: 14px;
+    padding-top: 12px;
+}
+
+.commentAuthor {
+    font-weight: 500;
+    padding-right: 8px;
+}
+
+.commentText {
+     min-width: 477px;
+}
+
+.commentLike img {
+    width: 12px;
+    height: 12px;
+}
+
+.commentLike img:hover {
+    cursor: pointer;
+}
+
+.commentField {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    padding-left: 12px;
+    border-top: rgba(179, 177, 177, 0.644) solid 1px;
+}
+
+.commentSmiley img {
+    height: 24px;
+    width: 24px;
+    float: left;
+}
+
+.commentInputField {
+    min-width: 476px;
+    padding-left: 12px;
+}
+
+.commentInputField input {
+    text-decoration: none;
+    border: none;
+    height: 42px;
+    width: 464px;
+}
+
+.commentPostButton button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color: #0095f6;
+    font-weight: 700;
+}

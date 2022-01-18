@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+.titel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 430px;
+    height: 30px;
+    border-radius: 9px;
+    background: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: olivedrab;
+}
+
+.notiz {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 430px;
+    height: 100px;
+    border-radius: 11px;
+    box-shadow: 0 2px 2px 0 rgba(199, 196, 196, 0.822);
+    background: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: olivedrab;
+}
+
+.inputField {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.textPin {
+    position: relative;
+    text-align: center;
+    box-shadow:2px 2px 2px 2px gray;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 11px;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    color: olivedrab;
+}
+
+.button {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgba(219, 238, 44, 0.5);
+    color: ivory;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}

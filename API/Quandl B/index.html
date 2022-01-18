@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const API_KEY = 'aNNEhuwKmu_gqQonELTq';
+
+        async function loadCourse() {
+            let today = new Date();
+            today.setDate(new Date().getDate () - 1);
+            let startDate = today.toISOString().split('T')[0];
+            let endDate = today.toISOString().split('T')[0];
+            let url = `https://data.nasdaq.com/api/v3/datasets/BITFINEX/LUNAF0USTF0?start_date=${startDate}&end_date=${endDate}&api_key=${API_KEY}`;
+            let response = await fetch(url);
+            let responseAsJson = await response.json();
+            showLastCourses(responseAsJson);
+        }
+
+        function showLastCourses(responseAsJson){
+            let currentBitcoin = responseAsJson['dataset']['data'][0][4];
+            document.getElementById('bitcoinInUSD').innerHTML = currentBitcoin;
+        }
+        
+    </script>
+</head>
+<body onload="loadCourse()">
+    
+    <h1>Was kostet ein Bitcoin aktuell?</h1>
+
+    <div>Aktuell kostet ein Bitcoin <b id="bitcoinInUSD">60.000</b> USD.</div>
+</body>
+</html>

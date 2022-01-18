@@ -1,0 +1,59 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+}
+
+.imgdiv {
+    display: flex;
+    height: 300px;
+    filter: grayscale(0%);
+    transition: all 0.2s ease-in-out;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 6px;
+    flex: 1;
+}
+
+.imgdiv:hover{
+    filter: grayscale(80%);  
+}
+
+.bigImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(97, 97, 97, 0.87);
+    height: 100vh;
+    width: 100vw;
+}
+
+.arrow{
+    width: 90px;
+}
+
+.arrow:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.zoom{
+    height: 700px;
+    width: auto;
+    border: white 3px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.close:hover{
+    transform: scale(1.3);
+}
+
+.contant {
+    display: flex;
+    flex-wrap: wrap;
+}

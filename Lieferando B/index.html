@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liferando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="render()">
+    <div class="header">
+        <div class="header-logo">
+            <img src="./img/home.png">
+            <p>Liferando.de</p>
+        </div>
+        <div class="header-street">
+            <a href="'">Lippweg 52a, Beckum</a>
+        </div>
+        <div class="header-button">
+            <button class="header-button-flag"></button>
+            <button class="header-button-more"></button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="home">
+            <div class="home-header">
+                <img src="./img/headerImg.jpg">
+            </div>
+            <div class="menucard-notification">
+                <div>
+                    <h1>Alpha Food`s</h1>
+                </div>
+                <div class="info-and-fav">
+                    <button><img src="./img/info.png"></button>
+                    <button><img src="./img/favorite.png"></button>
+                </div>
+                <div class="rating">
+                    <img src="./img/star2.png">
+                    <img src="./img/star2.png">
+                    <img src="./img/star2.png">
+                    <img src="./img/star2.png">
+                    <img src="./img/star1.png">
+                    (8000 Bewertungen)
+                </div>
+            </div>
+            <div class="menucard-container" id="menucard">
+            </div>
+        </div>
+        <div class="basket" id="scroll80">
+            <div class="basket-titel">
+                <span>Warenkorb</span>
+            </div>
+            <div class="basket-products" id="products">
+
+            </div>
+            <div class="basket-contant" id="orderlist">
+                <img src="./img/basket.png">
+                <span class="basket-empty-text">Wähle leckere Gerichte aus der Karte und bestelle Dein Menü.</span>
+            </div>
+            <div id="basket-sum-container" class="basket-sum">
+                <div id="basketSum" class="basket-full-sum">
+                </div>
+                <div id="orderText" class="d-none">
+                </div>
+            </div>
+            <div id="min-order" class="min-order">
+                Leider kannst Du noch nicht bestellen. Alpha Foods liefert erst ab einem Mindestbestellwert von <br>
+                13,00 € (exkl. Lieferkosten).
+            </div>
+            <button id="orderButton" class="basket-order-button">Bestellen</button>
+        </div>
+    </div>
+    <div class="restaurant-logo">
+        <div class="logo-container">
+            <img src="./img/logo.png">
+        </div>
+    </div>
+    <div class="newbasket">
+
+    </div>
+</body>
+
+</html>
